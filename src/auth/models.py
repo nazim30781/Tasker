@@ -2,8 +2,9 @@ from datetime import datetime
 
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
 from sqlalchemy import Column, Integer, TIMESTAMP, String, Boolean
+from sqlalchemy.orm import Mapped, relationship
 
-from src.database import Base
+from src.database import Base, metadata
 
 
 class User(SQLAlchemyBaseUserTable[int], Base):

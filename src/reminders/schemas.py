@@ -1,9 +1,10 @@
+from datetime import datetime
+
 from pydantic import BaseModel
 
 
-class Task(BaseModel):
-    id: int
+class ReminderCreate(BaseModel):
     title: str
     description: str
+    time: datetime
     user_id: int
-    is_done: bool
