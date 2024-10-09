@@ -1,46 +1,30 @@
-from sqlalchemy import insert, select
-
-from conftest import client, async_session_maker
-from src.tasks.models import Task
+from conftest import client
 
 
 def test_register():
-    response = client.post("/auth/register", json={
-        "email": "string",
-        "password": "nm2221723456",
-        "is_active": True,
-        "is_superuser": False,
-        "is_verify": True,
-        "username": "nazim"
+    response = client.post("/auth/signup", json={
+        "username": "nazim",
+        "email": "nazim30781@gmail.com",
+        "password": "nm222173456"
     })
 
-    assert response.status_code == 201
+
+def test_login():
+    response = client.post("/auth/login", json={
+        "email": "nazim30781@gmail.com",
+        "password": "nm222173456"
+    })
+    assert response.status_code == 200
 
 
-# def test_register_used_email():
-#     response = client.post("/auth/register", json={
-#         "email": "string",
-#         "password": "nm2221723456",
-#         "is_active": True,
-#         "is_superuser": False,
-#         "is_verify": True,
-#         "username": "nazim"
-#     })
-#
-#     assert response.status_code == 201
+def test_access_token():
+    headers = {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibmF6aW0zMDc4MUBnbWFpbC5jb20iLCJpZCI6MX0sImV4cCI6MTcyODQ5NTUxOSwicmVmcmVzaCI6ZmFsc2V9.9Zoo8vbELPv91kWJmQQir57D6T3B8QIuHstYAwjO3TE"
+    }
 
+    response = client.get("/auth/test", headers=headers)
 
-# async def test_task_create():
-#     async with async_session_maker() as session:
-#         stmt = insert(Task).values(
-#             id=1,
-#             title="test",
-#             description="aaaa",
-#             user_id=1
-#         )
-#     await session.execute(stmt)
-#     await session.commit()
-#
-#     query = select(Task)
-#     result = await session.execute(query)
-#     assert result.mapping().all() == [(1, "test", "aaaa", 1, False)]
+    print("_________________________________________________")
+    print(response)
+
+    assert response.status_code == 200

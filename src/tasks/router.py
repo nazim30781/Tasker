@@ -2,11 +2,19 @@ from fastapi import APIRouter, Depends
 from sqlalchemy import insert, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from auth.utils import decode_token
+
 from .schemas import TaskCreate
 from src.tasks.models import Task
 
 from src.database import get_async_session
 from ..auth.models import User
+from ..auth.dependencies import AccessTokenBearer
+
+from ..logger import logger
+
+access_toke_bearer = AccessTokenBearer()
+
 
 router = APIRouter(
     prefix="/tasks",
@@ -15,10 +23,23 @@ router = APIRouter(
 
 
 @router.get("/getAllTasks")
-async def get_all_tasks(user_id: int, session: AsyncSession = Depends(get_async_session)):
-    query = select(User).where(Task.user_id == user_id)
-    result = await session.execute(query)
-    return result.mappings().all()
+async def get_all_tasks(user_details = Depends(access_toke_bearer), 
+                        session: AsyncSession = Depends(get_async_session)):
+    access_token = dict(user_details)['credentials']
+    user_data = decode_token(access_token)
+    id = user_data['user']['id']
+
+    query = select(Task).filter(
+        Task.user_id == id,
+        Task.is_done == False
+    )
+
+    response = await session.execute(query)
+
+    logger.info(response.all())
+
+    return response
+    
 
 
 @router.post("/createTask")
@@ -44,7 +65,6 @@ async def check_task(task_id: int, session: AsyncSession = Depends(get_async_ses
         .filter(Task.id == task_id)
     )
 
-    await session.execute(query)
+    await session.execute(query) 
     await session.commit()
-    return "gg"
 
