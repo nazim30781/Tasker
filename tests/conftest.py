@@ -15,6 +15,11 @@ from src.database import get_async_session, Base
 from src.main import app
 
 DATABASE_URL_TEST = f"postgresql+asyncpg://{DB_USER_TEST}:{DB_PASS_TEST}@{DB_HOST_TEST}:{DB_PORT_TEST}/{DB_NAME_TEST}"
+TEST_ACCES_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibmF6aW0zMDc4MUBnbWFpbC5jb20iLCJpZCI6MX0sImV4cCI6MTcyODc0MDczMCwicmVmcmVzaCI6ZmFsc2V9.8UVZ5BSZXL6aOnSMvlrOwhT4HU2SqJ4XtLe34xrluDk"
+
+headers = {
+    "Authorization": f"Bearer {TEST_ACCES_TOKEN}"
+}
 
 engine_test = create_async_engine(DATABASE_URL_TEST, poolclass=NullPool)
 async_session_maker = sessionmaker(engine_test, class_=AsyncSession, expire_on_commit=False)

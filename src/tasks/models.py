@@ -11,4 +11,3 @@ class Task(Base):
     description: str = Column(String, nullable=True)
     user_id: int = Column(Integer, ForeignKey("users.id"))
     is_done: bool = Column(Boolean, default=False)
-

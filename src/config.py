@@ -18,3 +18,6 @@ DB_PORT_TEST = os.environ.get("DB_PORT_TEST")
 
 JWT_SECRET = os.environ.get("JWT_SECRET")
 JWT_ALGORITHM = os.environ.get("JWT_ALGORITHM")
+
+SMTP_USER = os.environ.get("SMTP_USER")
+SMTP_PASS = os.environ.get("SMTP_PASS")

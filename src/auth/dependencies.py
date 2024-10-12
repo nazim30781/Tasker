@@ -32,7 +32,6 @@ class AccessTokenBearer(HTTPBearer):
         token_data = decode_token(token)
 
         if token_data is not None:
-            print(token_data)
             return True
 
         return False

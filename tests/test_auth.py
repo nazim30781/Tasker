@@ -1,4 +1,5 @@
-from conftest import client
+from conftest import client, headers
+from logger import logger
 
 
 def test_register():
@@ -14,14 +15,13 @@ def test_login():
         "email": "nazim30781@gmail.com",
         "password": "nm222173456"
     })
+
+    logger.info(response)
+
     assert response.status_code == 200
 
 
 def test_access_token():
-    headers = {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibmF6aW0zMDc4MUBnbWFpbC5jb20iLCJpZCI6MX0sImV4cCI6MTcyODQ5NTUxOSwicmVmcmVzaCI6ZmFsc2V9.9Zoo8vbELPv91kWJmQQir57D6T3B8QIuHstYAwjO3TE"
-    }
-
     response = client.get("/auth/test", headers=headers)
 
     print("_________________________________________________")

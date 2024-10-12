@@ -5,8 +5,9 @@ from sqlalchemy import pool
 
 from alembic import context
 
-from src.auth.models import User
+from src.reminders.models import Reminder
 from src.tasks.models import Task
+from src.auth.models import User
 
 from src.config import DB_NAME, DB_PORT, DB_HOST, DB_PASS, DB_USER
 

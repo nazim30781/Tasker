@@ -1,4 +1,138 @@
-2024-10-09T17:47:29.126925+0300 INFO {'user': {'email': 'nazim30781@gmail.com', 'id': 1}, 'exp': 1728495519, 'refresh': False}
-2024-10-09T17:47:29.135902+0300 INFO {'user': {'email': 'nazim30781@gmail.com', 'id': 1}, 'exp': 1728495519, 'refresh': False}
-2024-10-09T17:47:29.262847+0300 INFO []
-2024-10-09T17:47:52.597009+0300 INFO []
+2024-10-12T13:12:25.399973+0300 INFO <Response [200 OK]>
+2024-10-12T13:12:25.399973+0300 INFO <Response [200 OK]>
+2024-10-12T13:12:25.407984+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 12, 24, 523305), 'user_id': 1}
+2024-10-12T13:12:25.407984+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 12, 24, 523305), 'user_id': 1}
+2024-10-12T13:12:25.612834+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:12:25.612834+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:12:25.802328+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BC717C3BF0>, 'user_id': 1, 'title': 'test', 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:12:25.802328+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001BC717C3BF0>, 'user_id': 1, 'title': 'test', 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:39:56.862632+0300 INFO <Response [200 OK]>
+2024-10-12T13:39:56.862632+0300 INFO <Response [200 OK]>
+2024-10-12T13:39:56.872672+0300 INFO celery
+2024-10-12T13:39:56.872672+0300 INFO celery
+2024-10-12T13:39:56.882625+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 39, 55, 422719), 'user_id': 1}
+2024-10-12T13:39:56.882625+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 39, 55, 422719), 'user_id': 1}
+2024-10-12T13:39:57.080535+0300 INFO celery
+2024-10-12T13:39:57.085535+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:39:57.085535+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:39:57.381081+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000020A946FC050>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:39:57.381081+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000020A946FC050>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:40:47.079958+0300 INFO <Response [200 OK]>
+2024-10-12T13:40:47.079958+0300 INFO <Response [200 OK]>
+2024-10-12T13:40:47.089985+0300 INFO celery
+2024-10-12T13:40:47.089985+0300 INFO celery
+2024-10-12T13:40:47.399898+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:40:47.399898+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:40:47.679627+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000210A3A68530>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:40:47.679627+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000210A3A68530>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:41:04.778319+0300 INFO <Response [200 OK]>
+2024-10-12T13:41:04.778319+0300 INFO <Response [200 OK]>
+2024-10-12T13:41:04.788302+0300 INFO celery
+2024-10-12T13:41:04.788302+0300 INFO celery
+2024-10-12T13:41:05.058158+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:41:05.058158+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:41:05.374646+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002754AB91550>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:41:05.374646+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000002754AB91550>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:42:36.733352+0300 INFO <Response [200 OK]>
+2024-10-12T13:42:36.733352+0300 INFO <Response [200 OK]>
+2024-10-12T13:42:36.748315+0300 INFO celery
+2024-10-12T13:42:36.748315+0300 INFO celery
+2024-10-12T13:42:36.811797+0300 INFO celery
+2024-10-12T13:42:37.011878+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:42:37.011878+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:42:37.281010+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001D7B1058FB0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:42:37.281010+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001D7B1058FB0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T13:42:59.585880+0300 INFO <Response [200 OK]>
+2024-10-12T13:42:59.585880+0300 INFO <Response [200 OK]>
+2024-10-12T13:42:59.595873+0300 INFO celery
+2024-10-12T13:42:59.595873+0300 INFO celery
+2024-10-12T13:42:59.660876+0300 INFO celery
+2024-10-12T13:42:59.875955+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:42:59.875955+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:43:00.141938+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001E416F78EF0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:43:00.141938+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001E416F78EF0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:44:59.803241+0300 INFO <Response [200 OK]>
+2024-10-12T13:44:59.803241+0300 INFO <Response [200 OK]>
+2024-10-12T13:44:59.813234+0300 INFO celery
+2024-10-12T13:44:59.813234+0300 INFO celery
+2024-10-12T13:44:59.823244+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 44, 59, 818260), 'user_id': 1}
+2024-10-12T13:44:59.823244+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 13, 44, 59, 818260), 'user_id': 1}
+2024-10-12T13:45:00.088031+0300 INFO celery
+2024-10-12T13:45:00.093060+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:45:00.093060+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T13:45:00.397888+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000255A24AC0B0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T13:45:00.397888+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000255A24AC0B0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:05:50.562871+0300 INFO <Response [200 OK]>
+2024-10-12T14:05:50.562871+0300 INFO <Response [200 OK]>
+2024-10-12T14:05:50.651635+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 6, 50, 572842), 'user_id': 1}
+2024-10-12T14:05:50.651635+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 6, 50, 572842), 'user_id': 1}
+2024-10-12T14:05:50.809209+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:05:50.809209+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:05:51.168249+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000017A6AA7D430>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:05:51.168249+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000017A6AA7D430>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:07:13.378925+0300 INFO <Response [200 OK]>
+2024-10-12T14:07:13.378925+0300 INFO <Response [200 OK]>
+2024-10-12T14:07:13.454097+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 8, 13, 388949), 'user_id': 1}
+2024-10-12T14:07:13.454097+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 8, 13, 388949), 'user_id': 1}
+2024-10-12T14:07:13.593706+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:07:13.593706+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:07:13.833577+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029BC14D15B0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:07:13.833577+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029BC14D15B0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:09:25.075350+0300 INFO <Response [200 OK]>
+2024-10-12T14:09:25.075350+0300 INFO <Response [200 OK]>
+2024-10-12T14:09:25.225272+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 10, 25, 95339), 'user_id': 1}
+2024-10-12T14:09:25.225272+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 10, 25, 95339), 'user_id': 1}
+2024-10-12T14:09:25.605101+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:09:25.605101+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:09:26.104873+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021B72235430>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:09:26.104873+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021B72235430>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:11:32.836241+0300 INFO <Response [200 OK]>
+2024-10-12T14:11:32.836241+0300 INFO <Response [200 OK]>
+2024-10-12T14:11:34.176718+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 12, 32, 846252), 'user_id': 1}
+2024-10-12T14:11:34.176718+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 12, 32, 846252), 'user_id': 1}
+2024-10-12T14:11:34.304152+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:11:34.304152+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:11:34.659307+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000254B38044D0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:11:34.659307+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000254B38044D0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:12:47.627363+0300 INFO <Response [200 OK]>
+2024-10-12T14:12:47.627363+0300 INFO <Response [200 OK]>
+2024-10-12T14:12:48.084054+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:12:48.084054+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:12:48.449407+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029A7AD9E2D0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:12:48.449407+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000029A7AD9E2D0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:13:25.986096+0300 INFO <Response [200 OK]>
+2024-10-12T14:13:25.986096+0300 INFO <Response [200 OK]>
+2024-10-12T14:13:26.063829+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 14, 25, 997056), 'user_id': 1}
+2024-10-12T14:13:26.063829+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 14, 25, 997056), 'user_id': 1}
+2024-10-12T14:13:26.216505+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:13:26.216505+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:13:26.471026+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000201E5DAD5B0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:13:26.471026+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000201E5DAD5B0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:21:24.507775+0300 INFO <Response [200 OK]>
+2024-10-12T14:21:24.507775+0300 INFO <Response [200 OK]>
+2024-10-12T14:21:25.012834+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:21:25.012834+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:21:25.288484+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000221E84E0470>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:21:25.288484+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x00000221E84E0470>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:22:06.267320+0300 INFO <Response [200 OK]>
+2024-10-12T14:22:06.267320+0300 INFO <Response [200 OK]>
+2024-10-12T14:22:06.818801+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:22:06.818801+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:22:07.089339+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F59A591FD0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:22:07.089339+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001F59A591FD0>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:23:59.647641+0300 INFO <Response [200 OK]>
+2024-10-12T14:23:59.647641+0300 INFO <Response [200 OK]>
+2024-10-12T14:23:59.728791+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 24, 59, 662633), 'user_id': 1}
+2024-10-12T14:23:59.728791+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 14, 24, 59, 662633), 'user_id': 1}
+2024-10-12T14:23:59.858703+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:23:59.858703+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:24:00.113952+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021E18C85430>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:24:00.113952+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x0000021E18C85430>, 'title': 'test', 'is_done': False, 'user_id': 1, 'description': 'test', 'id': 1}
+2024-10-12T14:28:01.307510+0300 INFO <Response [200 OK]>
+2024-10-12T14:28:01.307510+0300 INFO <Response [200 OK]>
+2024-10-12T14:28:01.397443+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 11, 29, 1, 317486), 'user_id': 1}
+2024-10-12T14:28:01.397443+0300 INFO {'title': 'test_reminder', 'description': 'test_reminder', 'time': datetime.datetime(2024, 10, 12, 11, 29, 1, 317486), 'user_id': 1}
+2024-10-12T14:28:01.567413+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:28:01.567413+0300 INFO {'title': 'test', 'description': 'test', 'user_id': 1}
+2024-10-12T14:28:01.948181+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001B59AC614F0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}
+2024-10-12T14:28:01.948181+0300 INFO {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x000001B59AC614F0>, 'title': 'test', 'user_id': 1, 'is_done': False, 'id': 1, 'description': 'test'}

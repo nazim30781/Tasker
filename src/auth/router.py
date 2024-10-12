@@ -85,7 +85,5 @@ async def login_user(login_data: UserLoginModel,
 
 @router.get("/test")
 async def test(user_details=Depends(access_token_bearer)):
-    print(user_details)
-
     return user_details
 
